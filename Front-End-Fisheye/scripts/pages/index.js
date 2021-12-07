@@ -12,7 +12,7 @@ const datas = fetch("./data/photographers.json")
     console.log(photographers);
     // et bien retourner le tableau photographers seulement une fois
     return ({
-        photographers: [...photographers, ...photographers, ...photographers]})
+        photographers: [...photographers]})
 }
 
 async function displayData(photographers) {
