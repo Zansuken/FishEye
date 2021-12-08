@@ -9,7 +9,6 @@ const datas = fetch("./data/photographers.json")
         photographers.push(photographer)
     }
 
-    console.log(photographers);
     // et bien retourner le tableau photographers seulement une fois
     return ({
         photographers: [...photographers]})
@@ -32,6 +31,7 @@ async function init() {
 };
 
 init();
+
 
 })
 .catch(err => console.log(err))
